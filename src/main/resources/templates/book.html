@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Book</title>
+    </head>
+    <body>
+        <h2>Book Detail</h2>
+       <div> <span>Id: </span> <span th:text="${book.id}">0</span></div>
+        <div> <span>Title: </span><span th:text="${book.title}">Book 0</span></div>
+        <div> <span>ISBN: </span><span th:text="${book.isbn}">0000-0000</span> </div>
+        <div>  <span>Author: </span><span th:text="${book.author}">Mr. 0</span> </div>
+    </body>
+</html>
