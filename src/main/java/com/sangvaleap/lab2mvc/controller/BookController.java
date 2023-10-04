@@ -20,7 +20,7 @@ public class BookController {
        this.bookService = bookService;
     }
 
-    @GetMapping(value = {"/"})
+    @GetMapping(value = {""})
     public String getBooks( Model model){
         List<Book> books = bookService.getBooks();
         model.addAttribute("books", books);

@@ -22,8 +22,8 @@
                 <td th:text="${b.isbn}">0000-0000</td>
                 <td th:text="${b.author}">Mr. 0</td>
                 <td >
-                    <a th:href="@{${b.id}}">
-                        View
+                    <a th:href="@{books/{id}(id=${b.id})}">
+                        view
                     </a>
                 </td>
             </tr>
